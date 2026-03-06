@@ -40,7 +40,7 @@ Each feature is implemented using separate **UseCase classes** to keep business 
 
 1. Clone the repository
    
-git clone https://github.com/ngohoangphuc22042005/book-management-java.git
+   git clone https://github.com/ngohoangphuc22042005/book-management-java.git
 
 3. Open the project in your IDE (IntelliJ / Eclipse)
 
