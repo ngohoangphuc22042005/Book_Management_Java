@@ -1,4 +1,3 @@
-# Book_Management_Java
 # Book Management System (Java)
 
 A simple Java application for managing books.  
@@ -40,11 +39,12 @@ Each feature is implemented using separate **UseCase classes** to keep business 
 ## How to Run
 
 1. Clone the repository
+   
 git clone https://github.com/ngohoangphuc22042005/book-management-java.git
 
-2. Open the project in your IDE (IntelliJ / Eclipse)
+3. Open the project in your IDE (IntelliJ / Eclipse)
 
-3. Run the main application file
+4. Run the main application file
 
 ## Author
 
