@@ -35,7 +35,7 @@ Each feature is implemented using separate **UseCase classes** to keep business 
 - Design Patterns
 
 ## Project Structure
-\\\
+\
 quanlysach/
 ├── AppBook.java                  # Entry point
 │
@@ -129,7 +129,7 @@ quanlysach/
 │   │   └── OpenAddBookFormUI.java
 │   ├── OpenEditBookForm/
 │   │   └── OpenEditBookFormUI.java
-│   └── ReportUI.java                                                                                                                                             \\\
+│   └── ReportUI.java                                                                                                                                             \\
   
 ## How to Run
 
