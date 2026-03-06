@@ -37,103 +37,99 @@ Each feature is implemented using separate **UseCase classes** to keep business 
 ## Project Structure
 
 quanlysach/
- ├── AppBook.java                  # Entry point
- │
- ├── business/                     # Tầng nghiệp vụ (Use Case + Domain)
- │    ├── Book.java
- │    ├── Textbook.java
- │    ├── ReferenceBook.java
- │    ├── BookFactory.java
- │    ├── BookViewDTO.java
- │    ├── BookListViewUseCase.java
- │    ├── DeleteBook/
- │    │    ├── DeleteBookUseCase.java
- │    │    ├── ReqDeleteBook.java
- │    │    ├── ResDeleteBook.java
- │    │    └── DeleteBookFactory.java
- │    ├── EditBook/
- │    │    ├── EditBookUseCase.java
- │    │    ├── ReqEditBook.java
- │    │    └── ResEditBook.java
- │    ├── FindBook/
- │    │    ├── FindBookUseCase.java
- │    │    ├── ReqFindBook.java
- │    │    └── ResFindBook.java
- │    ├── FindBookNXB_X/
- │    │    ├── FindBookNXB_XUseCase.java
- │    │    ├── ResBookNXB_XDTO.java
- │    │    └── FindBookNXB_XFactory.java
- │    ├── OpenAddBookForm/
- │    │    ├── BookType.java
- │    │    ├── OpenAddBookFormUseCase.java
- │    │    └── ResBookTypeDTO.java
- │    ├── OpenEditBookForm/
- │    │    ├── OpenEditBookFormUseCase.java
- │    │    ├── OpenEditBookFormResponse.java
- │    │    └── ResEditBookDTO.java
- │    ├── SaveBook/
- │    │    ├── SaveBookUseCase.java
- │    │    ├── SaveBookFactoryImpl.java
- │    │    └── ReqBook.java
- │    ├── SumByType/
- │    │    ├── SumByTypeUseCase.java
- │    │    ├── SumByTypeDTO.java
- │    │    ├── ReqSumByType.java
- │    │    └── ResSumByType.java
- │    └── AvgPriceByType/
- │         ├── AvgPriceByTypeUseCase.java
- │         ├── ReqAvgPrice.java
- │         └── ResAvgPrice.java
- │
- ├── persistence/                  # DAO/Gateway
- │    ├── DBConnection.java
- │    ├── BookDTO.java
- │    ├── BookListViewDAO.java
- │    ├── DeleteBook/
- │    │    ├── DeleteBookDAOImpl.java
- │    │    └── DeleteBookGateway.java
- │    ├── EditBook/
- │    │    ├── EditBookDAO.java
- │    │    └── EditBookGateway.java
- │    ├── AvgPriceByType/
- │    │    ├── AvgPriceByTypeDAOImpl.java
- │    │    └── AvgPriceByTypeGateway.java
- │    ├── SaveBook/
- │    │    ├── SaveBookDAOImpl.java
- │    │    └── SaveBookGateway.java
- │    ├── FindBook/
- │    │    └── FindBookGateway.java
- │    ├── FindBookNXB_X/
- │    │    └── FindBookNXB_XGateway.java
- │    ├── OpenAddBookForm/
- │    │    ├── BookTypeDTO.java
- │    │    └── OpenAddBookFormGateway.java
- │    └── OpenEditBookForm/
- │         ├── EditBookDTO.java
- │         └── OpenEditBookFormGateway.java
- │
- ├── presentation/                 # UI + Controller + ViewModel
- │    ├── BookListViewController.java
- │    ├── BookListViewUI.java
- │    ├── BookViewModel.java
- │    ├── DeleteBook/
- │    │    └── DeleteBookController.java
- │    ├── FindBookNXB_X/
- │    │    ├── FindBookNXB_XController.java
- │    │    └── FindBookNXB_XViewModel.java
- │    ├── EditBook/
- │    │    └── EditBookController.java
- │    ├── SaveBook/
- │    │    └── SaveBookController.java
- │    ├── OpenAddBookForm/
- │    │    └── OpenAddBookFormUI.java
- │    ├── OpenEditBookForm/
- │    │    └── OpenEditBookFormUI.java
- │    └── ReportUI.java
- 
-
-
- 
+├── AppBook.java                  # Entry point
+│
+├── business/                     # Tầng nghiệp vụ (Use Case + Domain)
+│   ├── Book.java
+│   ├── Textbook.java
+│   ├── ReferenceBook.java
+│   ├── BookFactory.java
+│   ├── BookViewDTO.java
+│   ├── BookListViewUseCase.java
+│   ├── DeleteBook/
+│   │   ├── DeleteBookUseCase.java
+│   │   ├── ReqDeleteBook.java
+│   │   ├── ResDeleteBook.java
+│   │   └── DeleteBookFactory.java
+│   ├── EditBook/
+│   │   ├── EditBookUseCase.java
+│   │   ├── ReqEditBook.java
+│   │   └── ResEditBook.java
+│   ├── FindBook/
+│   │   ├── FindBookUseCase.java
+│   │   ├── ReqFindBook.java
+│   │   └── ResFindBook.java
+│   ├── FindBookNXB_X/
+│   │   ├── FindBookNXB_XUseCase.java
+│   │   ├── ResBookNXB_XDTO.java
+│   │   └── FindBookNXB_XFactory.java
+│   ├── OpenAddBookForm/
+│   │   ├── BookType.java
+│   │   ├── OpenAddBookFormUseCase.java
+│   │   └── ResBookTypeDTO.java
+│   ├── OpenEditBookForm/
+│   │   ├── OpenEditBookFormUseCase.java
+│   │   ├── OpenEditBookFormResponse.java
+│   │   └── ResEditBookDTO.java
+│   ├── SaveBook/
+│   │   ├── SaveBookUseCase.java
+│   │   ├── SaveBookFactoryImpl.java
+│   │   └── ReqBook.java
+│   ├── SumByType/
+│   │   ├── SumByTypeUseCase.java
+│   │   ├── SumByTypeDTO.java
+│   │   ├── ReqSumByType.java
+│   │   └── ResSumByType.java
+│   └── AvgPriceByType/
+│       ├── AvgPriceByTypeUseCase.java
+│       ├── ReqAvgPrice.java
+│       └── ResAvgPrice.java
+│
+├── persistence/                  # DAO/Gateway
+│   ├── DBConnection.java
+│   ├── BookDTO.java
+│   ├── BookListViewDAO.java
+│   ├── DeleteBook/
+│   │   ├── DeleteBookDAOImpl.java
+│   │   └── DeleteBookGateway.java
+│   ├── EditBook/
+│   │   ├── EditBookDAO.java
+│   │   └── EditBookGateway.java
+│   ├── AvgPriceByType/
+│   │   ├── AvgPriceByTypeDAOImpl.java
+│   │   └── AvgPriceByTypeGateway.java
+│   ├── SaveBook/
+│   │   ├── SaveBookDAOImpl.java
+│   │   └── SaveBookGateway.java
+│   ├── FindBook/
+│   │   └── FindBookGateway.java
+│   ├── FindBookNXB_X/
+│   │   └── FindBookNXB_XGateway.java
+│   ├── OpenAddBookForm/
+│   │   ├── BookTypeDTO.java
+│   │   └── OpenAddBookFormGateway.java
+│   └── OpenEditBookForm/
+│       ├── EditBookDTO.java
+│       └── OpenEditBookFormGateway.java
+│
+├── presentation/                 # UI + Controller + ViewModel
+│   ├── BookListViewController.java
+│   ├── BookListViewUI.java
+│   ├── BookViewModel.java
+│   ├── DeleteBook/
+│   │   └── DeleteBookController.java
+│   ├── FindBookNXB_X/
+│   │   ├── FindBookNXB_XController.java
+│   │   └── FindBookNXB_XViewModel.java
+│   ├── EditBook/
+│   │   └── EditBookController.java
+│   ├── SaveBook/
+│   │   └── SaveBookController.java
+│   ├── OpenAddBookForm/
+│   │   └── OpenAddBookFormUI.java
+│   ├── OpenEditBookForm/
+│   │   └── OpenEditBookFormUI.java
+│   └── ReportUI.java
 
 ## How to Run
 
