@@ -40,7 +40,7 @@ Each feature is implemented using separate **UseCase classes** to keep business 
 quanlysach/
 ├── AppBook.java                  # Entry point
 │
-├── business/                     # Tầng nghiệp vụ (Use Case + Domain)
+├── business/                     # Use Case + Domain
 │   ├── Book.java
 │   ├── Textbook.java
 │   ├── ReferenceBook.java
