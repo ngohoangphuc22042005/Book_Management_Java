@@ -36,7 +36,6 @@ Each feature is implemented using separate **UseCase classes** to keep business 
 
 ## Project Structure
 
-      ```bash
 quanlysach/
 ├── AppBook.java                  # Entry point
 │
@@ -130,8 +129,7 @@ quanlysach/
 │   │   └── OpenAddBookFormUI.java
 │   ├── OpenEditBookForm/
 │   │   └── OpenEditBookFormUI.java
-│   └── ReportUI.java
-   ```
+│   └── ReportUI.java                                                                                                                                                     
   
 ## How to Run
 
